@@ -1,0 +1,50 @@
+/* components/tabs/tabs.wxss */
+
+page {
+  background: #f7f7f7;
+}
+
+.horizontal {
+  width: 100%;
+  background: #fff;
+  /* padding: 0 24rpx;
+  box-sizing: border-box; */
+  position: relative;
+}
+
+.tabs {
+  white-space: nowrap;
+  position: relative;
+}
+
+.tab {
+  height: 88rpx;
+  line-height: 88rpx;
+  display: inline-block;
+  margin: 0 36rpx;
+  box-sizing: border-box;
+}
+
+.activeCur {
+  color: blue;
+  transition: all 0.3s linear;
+}
+
+.line {
+  height: 4rpx;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s linear;
+}
+
+.swiper{
+  width: 100%;
+  height: calc(100vh - 88rpx);
+}
+.swiper-item{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}

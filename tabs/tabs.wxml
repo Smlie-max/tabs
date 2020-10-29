@@ -1,0 +1,10 @@
+<scroll-view scroll-x="true" scroll-with-animation class="horizontal" scroll-left="{{offsetLeft}}" id="horizontal">
+  <view class="tabs">
+    <view class="tab {{active==index?'activeCur':''}}" wx:for="{{list}}" wx:key="index" bindtap="getItem" data-index="{{index}}" id="item-{{index}}">{{item.name}}</view>
+    <view class='line' style="{{lineStyle}}"></view>
+  </view>
+</scroll-view>
+
+<swiper class="swiper" current="{{active}}" bindchange="switchTab">
+  <swiper-item wx:for="{{list.length}}" wx:key="index" class="swiper-item">页面{{item+1}}</swiper-item>
+</swiper>
